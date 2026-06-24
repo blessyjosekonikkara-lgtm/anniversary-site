@@ -13,35 +13,19 @@
     font-family:'Segoe UI',sans-serif;
 }
 
-/* 📱 FIXED VIDEO BACKGROUND */
-#bg-video{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    object-position:center;
-    z-index:-2;
-}
-
-/* 🌫️ OVERLAY FOR READABILITY */
-body::before{
-    content:"";
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,0.35);
-    z-index:-1;
-}
-
+/* BACKGROUND IMAGE */
 body{
+    background:
+    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+    url('background.jpg');
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
     color:white;
     text-align:center;
 }
 
+/* HERO SECTION */
 .hero{
     min-height:100vh;
     display:flex;
@@ -53,13 +37,10 @@ body{
 
 h1{
     font-size:3rem;
-    color:white;
     margin-bottom:10px;
-    text-shadow:0 0 10px rgba(255,255,255,0.8);
 }
 
 h2{
-    color:white;
     margin-bottom:20px;
 }
 
@@ -78,9 +59,9 @@ h2{
     margin-top:20px;
     font-size:1.2rem;
     font-style:italic;
-    color:white;
 }
 
+/* MESSAGE BOX */
 .message{
     max-width:850px;
     margin:40px auto;
@@ -95,6 +76,7 @@ h2{
     font-size:1.1rem;
 }
 
+/* GALLERY */
 .gallery{
     padding:50px 20px;
 }
@@ -112,13 +94,12 @@ h2{
     object-fit:cover;
     border-radius:15px;
     box-shadow:0 5px 15px rgba(0,0,0,0.4);
-    border:1px solid rgba(255,255,255,0.3);
 }
 
+/* FOOTER */
 footer{
     padding:30px;
     background:rgba(0,0,0,0.6);
-    color:white;
     margin-top:40px;
     font-size:1.1rem;
 }
@@ -127,11 +108,6 @@ footer{
 
 <body>
 
-<!-- 🎬 BACKGROUND VIDEO (MOBILE FIXED) -->
-<video autoplay muted loop playsinline id="bg-video">
-    <source src="background.mp4" type="video/mp4">
-</video>
-
 <section class="hero">
     <div class="heart">❤️</div>
 
@@ -139,10 +115,10 @@ footer{
 
     <h2>Dear Mom & Dad</h2>
 
-    <p>Celebrating twenty beautiful years of love, trust, happiness and togetherness.</p>
+    <p>Celebrating 20 beautiful years of love, trust, and togetherness.</p>
 
     <p class="quote">
-        "Twenty years of love, trust, and togetherness. Your journey is a beautiful story that continues to inspire everyone around you."
+        "Twenty years of love, trust, and togetherness. Your journey is a beautiful story that inspires us every day."
     </p>
 </section>
 
@@ -152,25 +128,22 @@ footer{
     <p>
         Dear Mom and Dad,<br><br>
 
-        Today marks a truly special milestone—your 20th Wedding Anniversary.
-        For twenty wonderful years, you have built a beautiful family filled with love,
-        care, sacrifice, understanding, and endless support.
+        Today marks your 20th Wedding Anniversary. Your love, care, and support
+        built our beautiful family. Thank you for everything you have done for us.<br><br>
 
-        We are incredibly proud to be your children and grateful for all the love you have given us.
-
-        <br><br>
+        We are proud to be your children and wish you endless happiness and good health.<br><br>
 
         ❤️ Happy 20th Wedding Anniversary ❤️
     </p>
 </section>
 
 <section class="gallery">
-    <h2>Our Beautiful Memories</h2>
+    <h2>Our Memories</h2>
 
     <div class="photos">
-        <img src="photo1.jpeg">
-        <img src="photo2.jpeg">
-        <img src="photo3.jpeg">
+        <img src="photo1.jpg">
+        <img src="photo2.jpg">
+        <img src="photo3.jpg">
     </div>
 </section>
 
