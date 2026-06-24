@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy 20th Wedding Anniversary</title>
-
-<style>
+<title>Happy 20th Wedding Anniversary</title><style>
 *{
     margin:0;
     padding:0;
@@ -13,19 +10,22 @@
     font-family:'Segoe UI',sans-serif;
 }
 
-/* BACKGROUND IMAGE */
 body{
-    background:
-    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-    url('background.jpg');
-    background-size:cover;
-    background-position:center;
-    background-attachment:fixed;
     color:white;
     text-align:center;
+    overflow-x:hidden;
 }
 
-/* HERO SECTION */
+#bg-video{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    z-index:-1;
+}
+
 .hero{
     min-height:100vh;
     display:flex;
@@ -61,12 +61,11 @@ h2{
     font-style:italic;
 }
 
-/* MESSAGE BOX */
 .message{
     max-width:850px;
     margin:40px auto;
     padding:30px;
-    background:rgba(255,255,255,0.12);
+    background:rgba(0,0,0,0.45);
     border-radius:20px;
     backdrop-filter:blur(8px);
 }
@@ -76,7 +75,6 @@ h2{
     font-size:1.1rem;
 }
 
-/* GALLERY */
 .gallery{
     padding:50px 20px;
 }
@@ -96,60 +94,45 @@ h2{
     box-shadow:0 5px 15px rgba(0,0,0,0.4);
 }
 
-/* FOOTER */
 footer{
     padding:30px;
     background:rgba(0,0,0,0.6);
     margin-top:40px;
     font-size:1.1rem;
 }
-</style>
-</head>
+</style></head><body><video autoplay muted loop playsinline id="bg-video">
+    <source src="background (1).mp4" type="video/mp4">
+</video><section class="hero">
+    <div class="heart">❤️</div><h1>Happy 20th Wedding Anniversary</h1>
 
-<body>
+<h2>Dear Mom & Dad</h2>
 
-<section class="hero">
-    <div class="heart">❤️</div>
+<p>Celebrating 20 beautiful years of love, trust, and togetherness.</p>
 
-    <h1>Happy 20th Wedding Anniversary</h1>
+<p class="quote">
+    "Twenty years of love, trust, and togetherness. Your journey is a beautiful story that inspires us every day."
+</p>
 
-    <h2>Dear Mom & Dad</h2>
+</section><section class="message">
+    <h2>A Special Message</h2><p>
+    Dear Mom and Dad,<br><br>
 
-    <p>Celebrating 20 beautiful years of love, trust, and togetherness.</p>
+    Today marks your 20th Wedding Anniversary. Your love, care, and support
+    built our beautiful family. Thank you for everything you have done for us.<br><br>
 
-    <p class="quote">
-        "Twenty years of love, trust, and togetherness. Your journey is a beautiful story that inspires us every day."
-    </p>
-</section>
+    We are proud to be your children and wish you endless happiness and good health.<br><br>
 
-<section class="message">
-    <h2>A Special Message</h2>
+    ❤️ Happy 20th Wedding Anniversary ❤️
+</p>
 
-    <p>
-        Dear Mom and Dad,<br><br>
+</section><section class="gallery">
+    <h2>Our Memories</h2><div class="photos">
+    <img src="photo1.jpeg" alt="Memory 1">
+    <img src="photo2.jpeg" alt="Memory 2">
+    <img src="photo3.jpeg" alt="Memory 3">
+</div>
 
-        Today marks your 20th Wedding Anniversary. Your love, care, and support
-        built our beautiful family. Thank you for everything you have done for us.<br><br>
-
-        We are proud to be your children and wish you endless happiness and good health.<br><br>
-
-        ❤️ Happy 20th Wedding Anniversary ❤️
-    </p>
-</section>
-
-<section class="gallery">
-    <h2>Our Memories</h2>
-
-    <div class="photos">
-        <img src="photo1.jpg">
-        <img src="photo2.jpg">
-        <img src="photo3.jpg">
-    </div>
-</section>
-
-<footer>
+</section><footer>
     Made with ❤️ by Blessy & Joshual
-</footer>
-
-</body>
+</footer></body>
 </html>
